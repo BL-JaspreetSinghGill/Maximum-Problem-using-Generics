@@ -18,6 +18,7 @@ public class MaximumProblem<T extends Comparable> {
 
     public static <T extends Comparable> T testMaximum(T firstValue, T secondValue, T thirdValue, T... optionalValues) {
         T maxValue;
+
         if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
              maxValue = firstValue;
         } else if (secondValue.compareTo(thirdValue) > 0) {
@@ -28,6 +29,8 @@ public class MaximumProblem<T extends Comparable> {
         if (optionalValues.length != 0) {
             maxValue = checkForMaximumIncludingOptionalValues(maxValue, optionalValues);
         }
+        printMax(maxValue);
+
         return maxValue;
     }
 
@@ -37,6 +40,11 @@ public class MaximumProblem<T extends Comparable> {
                 maxValue = value;
             }
         }
+
         return maxValue;
+    }
+
+    private static <T extends Comparable> void printMax(T maxValue) {
+        System.out.println("MAXIMUM VALUE : "+maxValue);
     }
 }
