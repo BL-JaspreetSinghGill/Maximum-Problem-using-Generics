@@ -34,5 +34,20 @@ public class MaximumProblemTest {
     public void givenFloatMaxNumber_WhenAtThirdPos_ShouldReturnSameNumber() {
         Assert.assertEquals(50.9f, MaximumProblem.testMaximum(30.7f, 40.8f, 50.9f ), 0.0f);
     }
+
+    @Test
+    public void givenStringMaxValue_WhenAtFirstPos_ShouldReturnSameValue() {
+        Assert.assertEquals("Orange", MaximumProblem.testMaximum("Orange", "Apple", "Mango" ));
+    }
+
+    @Test
+    public void givenStringMaxValue_WhenAtSecondPos_ShouldReturnSameValue() {
+        Assert.assertEquals("Peach", MaximumProblem.testMaximum("Apple", "Peach", "Banana" ));
+    }
+
+    @Test
+    public void givenStringMaxValue_WhenAtThirdPos_ShouldReturnSameValue() {
+        Assert.assertEquals("White", MaximumProblem.testMaximum("Red", "Black", "White" ));
+    }
 }
 

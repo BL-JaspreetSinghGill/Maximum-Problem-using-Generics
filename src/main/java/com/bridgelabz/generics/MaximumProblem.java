@@ -2,21 +2,30 @@ package com.bridgelabz.generics;
 
 public class MaximumProblem {
 
-    public static Integer testMaximum(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
-            return firstNumber;
-        } else if (secondNumber.compareTo(thirdNumber) > 0) {
-            return secondNumber;
+    public static Integer testMaximum(Integer firstValue, Integer secondValue, Integer thirdValue) {
+        if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
+            return firstValue;
+        } else if (secondValue.compareTo(thirdValue) > 0) {
+            return secondValue;
         }
-        return thirdNumber;
+        return thirdValue;
     }
 
-    public static Float testMaximum(Float firstNumber, Float secondNumber, Float thirdNumber) {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
-            return firstNumber;
-        } else if (secondNumber.compareTo(thirdNumber) > 0) {
-            return secondNumber;
+    public static Float testMaximum(Float firstValue, Float secondValue, Float thirdValue) {
+        if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
+            return firstValue;
+        } else if (secondValue.compareTo(thirdValue) > 0) {
+            return secondValue;
         }
-        return thirdNumber;
+        return thirdValue;
+    }
+
+    public static String testMaximum(String firstValue, String secondValue, String thirdValue) {
+        if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
+            return firstValue;
+        } else if (secondValue.compareTo(thirdValue) > 0) {
+            return secondValue;
+        }
+        return thirdValue;
     }
 }
