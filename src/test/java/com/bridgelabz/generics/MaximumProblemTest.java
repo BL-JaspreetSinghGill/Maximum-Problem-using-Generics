@@ -14,4 +14,9 @@ public class MaximumProblemTest {
     public void givenIntegerMaxNumber_WhenAtSecondPos_ShouldReturnSameNumber() {
         Assert.assertSame(10, MaximumProblem.testMaximum(5, 10, 7 ));
     }
+
+    @Test
+    public void givenIntegerMaxNumber_WhenAtThirdPos_ShouldReturnSameNumber() {
+        Assert.assertSame(50, MaximumProblem.testMaximum(30, 40, 50 ));
+    }
 }
